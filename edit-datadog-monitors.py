@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 options = {
+    'site': os.getenv("DATADOG_HOST"),
     'api_key': os.getenv("DD_API_KEY"),
     'app_key': os.getenv("DD_APP_KEY")
 }
